@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
+import 'splash_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  // runApp(const MyApp());
+  runApp(const MountainsApp());
+}
+
+class MountainsApp extends StatelessWidget {
+  const MountainsApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashPage(),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
