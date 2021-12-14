@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'splash_page.dart';
 import '../widgets/app_header.dart';
 import '../widgets/app_search.dart';
+import '../widgets/app_mount_list_view.dart';
 
 class MountsApp extends StatelessWidget {
   const MountsApp({Key? key}) : super(key: key);
@@ -45,6 +46,9 @@ class MountsApp extends StatelessWidget {
         children: const [
           AppHeader(),
           AppSearch(),
+          Expanded(
+            child: AppMountListView(),
+          ),
         ],
       ),
     );
