@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mountains/splash_page.dart';
+import 'splash_page.dart';
+import '../widgets/app_header.dart';
+import '../widgets/app_search.dart';
 
 class MountsApp extends StatelessWidget {
   const MountsApp({Key? key}) : super(key: key);
@@ -26,11 +28,24 @@ class MountsApp extends StatelessWidget {
         ],
         iconTheme: const IconThemeData(color: mainColor),
       ),
-      drawer: const Drawer(),
-      body: const Center(
-        child: Text(
-          'Welcome to Mounts of the World!',
+      drawer: Drawer(
+        child: Container(
+          padding: const EdgeInsets.all(30),
+          color: mainColor,
+          alignment: Alignment.bottomLeft,
+          child: const Icon(
+            Icons.terrain,
+            color: Colors.white,
+            size: 80,
+          ),
         ),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
+          AppHeader(),
+          AppSearch(),
+        ],
       ),
     );
   }
