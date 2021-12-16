@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'landing_page.dart';
 
-const Color mainColor = Color(0xFFFF5656);
+import 'package:flutter_mountains/utilities/variables.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);

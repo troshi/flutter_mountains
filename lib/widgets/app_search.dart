@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mountains/screens/splash_page.dart';
+import 'package:flutter_mountains/utilities/variables.dart';
 
 class AppSearch extends StatelessWidget {
   const AppSearch({Key? key}) : super(key: key);

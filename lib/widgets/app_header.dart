@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../screens/splash_page.dart';
+import 'package:flutter_mountains/utilities/variables.dart';
 
 class AppHeader extends StatelessWidget {
   const AppHeader({Key? key}) : super(key: key);

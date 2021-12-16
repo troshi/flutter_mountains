@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import '../models/mount_model.dart';
+import '../models/category_model.dart';
 
 final List<MountModel> mountItems = [
   MountModel(
@@ -36,4 +38,11 @@ final List<MountModel> mountItems = [
       description:
           'Popocatépetl is an active stratovolcano located in the states of Puebla, Morelos, and Mexico in central Mexico. It lies in the eastern half of the Trans-Mexican volcanic belt. At 5,426 m it is the second highest peak in Mexico, after Citlaltépetl at 5,636 m.',
       location: 'Mexico'),
+];
+
+final List<CategoryModel> categories = [
+  CategoryModel(category: 'Mountain', icon: Icons.terrain),
+  CategoryModel(category: 'Forest', icon: Icons.park),
+  CategoryModel(category: 'Beach', icon: Icons.beach_access),
+  CategoryModel(category: 'Hiking', icon: Icons.directions_walk)
 ];

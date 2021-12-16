@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'splash_page.dart';
 import '../widgets/app_header.dart';
 import '../widgets/app_search.dart';
 import '../widgets/app_mount_list_view.dart';
+import '../widgets/app_category_list.dart';
+
+import 'package:flutter_mountains/utilities/variables.dart';
 
 class MountsApp extends StatelessWidget {
   const MountsApp({Key? key}) : super(key: key);
@@ -49,6 +51,7 @@ class MountsApp extends StatelessWidget {
           Expanded(
             child: AppMountListView(),
           ),
+          AppCategoryList(),
         ],
       ),
     );
