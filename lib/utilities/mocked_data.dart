@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/mount_model.dart';
-import '../models/category_model.dart';
+import 'package:flutter_mountains/models/category_model.dart';
+import 'package:flutter_mountains/models/mount_model.dart';
 
 final List<MountModel> mountItems = [
   MountModel(

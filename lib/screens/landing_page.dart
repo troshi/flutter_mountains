@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../widgets/app_header.dart';
-import '../widgets/app_search.dart';
-import '../widgets/app_mount_list_view.dart';
-import '../widgets/app_category_list.dart';
+import 'package:flutter_mountains/widgets/app_header.dart';
+import 'package:flutter_mountains/widgets/app_search.dart';
+import 'package:flutter_mountains/widgets/app_mount_list_view.dart';
+import 'package:flutter_mountains/widgets/app_category_list.dart';
+import 'package:flutter_mountains/widgets/app_bottom_bar.dart';
 
 import 'package:flutter_mountains/utilities/variables.dart';
 
@@ -52,6 +53,7 @@ class MountsApp extends StatelessWidget {
             child: AppMountListView(),
           ),
           AppCategoryList(),
+          AppBottomBar(),
         ],
       ),
     );
